@@ -1,0 +1,42 @@
+<h1>Select Image Test 2</h1>
+<hr />
+
+<form>
+    <!-- <p>Previously:</p>
+    <div>
+        <input checked="checked"  id="a1" type="radio" name="a" value="visa" />
+        <label for="a1">Visa</label><br/>
+        <input id="a2" type="radio" name="a" value="mastercard" />
+        <label for="a2">Mastercard</label>
+    </div>
+    <p>Now, with CSS3: </p>
+    <div class="cc-selector">
+        <input checked="checked" id="visa" type="radio" name="credit-card" value="visa" />
+        <label class="drinkcard-cc visa" for="visa"></label>
+        <input id="mastercard" type="radio" name="credit-card" value="mastercard" />
+        <label class="drinkcard-cc mastercard"for="mastercard"></label>
+    </div>
+    <p>A simple mod:</p>
+    <div class="cc-selector-2">
+        <input id="visa2" type="radio" name="creditcard" value="visa" />
+        <label class="drinkcard-cc visa" for="visa2"></label>
+        <input  checked="checked" id="mastercard2" type="radio" name="creditcard" value="mastercard" />
+        <label class="drinkcard-cc mastercard"for="mastercard2"></label>
+    </div> -->
+
+    <p>Using url in html: </p>
+    <div class="cc-selector">
+        <input id="visa2" type="radio" name="stamp" value="visa" (click)="onItemSelected('visa')" />
+        <label class="drinkcard-cc" style="background-image: url(http://i.imgur.com/lXzJ1eB.png);" for="visa2"></label>
+        <input id="mastercard2" type="radio" name="stamp" value="mastercard" (click)="onItemSelected('mastercard')" />
+        <label class="drinkcard-cc" style="background-image: url(http://i.imgur.com/SJbRQF7.png);" for="mastercard2"></label>
+
+        <input id="stamp1" type="radio" name="stamp" value="stamp1" (click)="onItemSelected('stamp1')" />
+        <label class="drinkcard-cc" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMinDpQLmrP4tLniJd4Nwqc9iyAALbM-LrsLQIzXo-LaxLkI_h&usqp=CAU);" for="stamp1"></label>
+    </div>
+
+</form>
+<small><a href="https://github.com/rcotrina94/icons">
+    &copy; Icons by <span class="cc">@rcotrina94</span> on <span class="cc">Github </span></a></small>
+
+<hr />
