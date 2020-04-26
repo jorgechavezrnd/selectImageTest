@@ -35,6 +35,14 @@
         <label class="drinkcard-cc" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSMinDpQLmrP4tLniJd4Nwqc9iyAALbM-LrsLQIzXo-LaxLkI_h&usqp=CAU);" for="stamp1"></label>
     </div>
 
+    <p>Using for:</p>
+    <div class="cc-selector" style="column-count: 2;">
+        <div *ngFor="let item of stampsURLList">
+            <input [id]="item.id" type="radio" name="stamp" [value]="item.id" (click)="onItemSelected(item.id)" />
+            <label class="drinkcard-cc" style="background-image: url({{item.url}})" [for]="item.id"></label>
+        </div>
+    </div>
+
 </form>
 <small><a href="https://github.com/rcotrina94/icons">
     &copy; Icons by <span class="cc">@rcotrina94</span> on <span class="cc">Github </span></a></small>
